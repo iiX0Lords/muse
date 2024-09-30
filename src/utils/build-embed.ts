@@ -69,7 +69,7 @@ export const buildPlayingMessageEmbed = (player: Player): EmbedBuilder => {
     .setFooter({text: `Source: ${artist}`});
 
   if (thumbnailUrl) {
-    message.setThumbnail('https://tenor.com/view/freak-level-gif-6250973632100210017');
+    message.setThumbnail('https://cdn.discordapp.com/attachments/1240200989550579762/1287665451752755200/ssstwitter.com_1727073645258.gif?ex=66fb99e7&is=66fa4867&hm=b2b21b8c66149160bd92c51111e365923a3c4c11aea483c320696edb46f7eb45&');
   }
 
   return message;
@@ -127,7 +127,7 @@ export const buildQueueEmbed = (player: Player, page: number, pageSize: number):
     .setFooter({text: `Source: ${artist} ${playlistTitle}`});
 
   if (thumbnailUrl) {
-    message.setThumbnail('https://tenor.com/view/freak-level-gif-6250973632100210017');
+    message.setThumbnail('https://cdn.discordapp.com/attachments/1240200989550579762/1287665451752755200/ssstwitter.com_1727073645258.gif?ex=66fb99e7&is=66fa4867&hm=b2b21b8c66149160bd92c51111e365923a3c4c11aea483c320696edb46f7eb45&');
   }
 
   return message;
