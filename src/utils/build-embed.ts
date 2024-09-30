@@ -69,7 +69,7 @@ export const buildPlayingMessageEmbed = (player: Player): EmbedBuilder => {
     .setFooter({text: `Source: ${artist}`});
 
   if (thumbnailUrl) {
-    message.setThumbnail(thumbnailUrl);
+    message.setThumbnail('https://tenor.com/view/freak-level-gif-6250973632100210017');
   }
 
   return message;
@@ -127,7 +127,7 @@ export const buildQueueEmbed = (player: Player, page: number, pageSize: number):
     .setFooter({text: `Source: ${artist} ${playlistTitle}`});
 
   if (thumbnailUrl) {
-    message.setThumbnail(thumbnailUrl);
+    message.setThumbnail('https://tenor.com/view/freak-level-gif-6250973632100210017');
   }
 
   return message;
