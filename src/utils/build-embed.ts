@@ -60,7 +60,7 @@ export const buildPlayingMessageEmbed = (player: Player): EmbedBuilder => {
   const message = new EmbedBuilder();
   message
     .setColor(player.status === STATUS.PLAYING ? 'DarkGreen' : 'DarkRed')
-    .setTitle(player.status === STATUS.PLAYING ? 'Now Playing' : 'Paused')
+    .setTitle(player.status === STATUS.PLAYING ? 'This fat nig is now playing' : 'im fucking paused dick head')
     .setDescription(`
       **${getSongTitle(currentlyPlaying)}**
       Requested by: <@${requestedBy}>\n
@@ -118,7 +118,7 @@ export const buildQueueEmbed = (player: Player, page: number, pageSize: number):
   }
 
   message
-    .setTitle(player.status === STATUS.PLAYING ? `Now Playing ${player.loopCurrentSong ? '(loop on)' : ''}` : 'Queued songs')
+    .setTitle(player.status === STATUS.PLAYING ? `now fucking playing ${player.loopCurrentSong ? '(loop on)' : ''}` : 'Queued songs')
     .setColor(player.status === STATUS.PLAYING ? 'DarkGreen' : 'NotQuiteBlack')
     .setDescription(description)
     .addFields([{name: 'In queue', value: getQueueInfo(player), inline: true}, {
